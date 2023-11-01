@@ -18,5 +18,9 @@ message Author{
 }
 service BookAuthorService{
   //unary sync
+  //client will send one request and server will response
   rpc getAuthor(Author) returns(Author){}
+  //server streaming --async
+  //client streaming --async
+  //bi directional streaming --async
 }
